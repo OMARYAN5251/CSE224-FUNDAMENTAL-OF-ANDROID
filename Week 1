@@ -1,0 +1,35 @@
+Question 1) The first screen that appears after an app is launched is known as a _____________?  
+Screen class
+Component Activity
+Main Activity
+
+
+Question 2) What are the advantages of using Jetpack Compose for UI development? Check all that apply.   
+ It helps developers maintain a consistent UI across multiple devices and platforms such as Android, iOS and the web.   
+ It simplifies the development of UI components for Android applications    
+ It can help build a UI using less code    
+ It builds a UI without needing to use an Activity.
+
+
+Question 3) What is the purpose of View Groups when building an Android UI? Select all that apply.    
+ To replace the use of TextView     
+ To define the navigation paths between screens     
+ To allow for the creation of complex user interfaces  
+ To provide a better organization of views.
+
+
+Question 4) Which of these are commonly used views in Android applications? Select all that apply.    
+TextView
+ButtonView
+ActivityView
+TextField
+Button
+ImageView
+
+
+Question 5) Which of the following are layout views that can be used in Android UI design. Select all that apply.    
+ViewLayout
+RelativeLayout
+LinearLayout
+GridLayout
+UILayout
