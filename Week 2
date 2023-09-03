@@ -1,0 +1,279 @@
+**********************|| Practice Quiz (Self-review: Add events and styling) ||*****************************
+
+Question 1
+What was the name of the composable replaced by xxx defined in this exercise?
+@Composable
+fun xxx() {
+    Column { 
+        WeeklySpecial()
+        MenuDish()
+    } 
+}
+
+MenuDish
+BottomPanel 
+LowerPanel
+
+Question 2
+In this exercise, Image composable loads the image from drawable using __________.
+1 resource()
+1 drawableResource()
+1 drawable using painterResource()
+
+Question 3) In this exercise, which listener was used to perform an action after the button is clicked? 
+1 onKeyListener 
+1 onClickListener
+1 onMouseListener
+
+**************ANSWER***********
+Question 1) LowerPanel
+Question 2) 1 drawable using painterResource()
+Question 3) 1 onClickListener
+
+
+
+***************************|| Practice QuizPractice Quiz (Knowledge check: Modifiers and Interactivity) ||***********************************
+
+
+
+Question 1) Which of these is true for modifiers?
+They change the container of a composable
+They must be provided for every composable
+They change how a composable behaves or appears
+
+Question 2
+The composable argument that would replace xxxx in the code below is known as a:
+
+fun SayHello(name: String) {
+
+   Text(
+
+        text = "Hey $name!",
+
+        xxxx = xxxx.padding(10.dp)
+
+    )
+
+}
+
+Augmenter
+Compose
+Modifier 
+
+Question 3) What is the order of precedence for modifier chaining in Android UI Development?
+Widgets, Layout, Themes
+Layout, Themes, Widgets 
+Themes, Widgets, Layout
+
+Question 4) What is the best way to handle an event in Android UI Development? 
+Use a switch statement.
+Augment composables
+Implement an OnClickListener interface.
+
+Question 5) Which of these event modifiers is used when the app user presses a mouse button?
+Shift 
+Action 
+Control 
+Alt 
+Meta 
+
+************ANSWER********************
+Question 1) They change how a composable behaves or appears
+Question 2) Modifier 
+Question 3) Widgets, Layout, Themes
+Question 4) Implement an OnClickListener interface.
+Question 5) Shift 
+            Control 
+            Alt 
+            Meta 
+
+
+
+***************************|| Practice Quiz (Self-review: Managing state in Compose) ||*******************************
+
+Question 1) In this exercise, the padding Modifier was used to properly space composables. 
+True
+False   
+
+Question 2) In this exercise, which callback was used to monitor the Text composable value change?
+1 onTextChange
+1 onValueUpdate    
+1 onValueChange
+
+Question 3) In the exercise, how was the username and password retrieved from Text composable?
+using field property
+using string property
+using text property
+
+************ANSWER********************
+Question 1) True
+Question 2) 1 onValueChange
+Question 3) using text property
+
+
+
+
+***************************|| Practice Quiz (Knowledge check: Managing state) ||***************************
+
+
+
+Question 1
+Not all ‘events’ in an Android app happen due to user interaction. 
+True
+False
+
+Question 2) What does 'Recomposition' in Jetpack Compose allow developers to do? 
+Reuse existing code 
+Refresh the UI whenever the data changes. 
+Write new code without editing existing code.
+
+Question 3) In Jetpack Compose what does the mutableStateOf function create?
+A fixed state of data
+An immutable state of code
+State that can be changed over time. 
+
+Question 4) A composable holding and modifying its state internally is called a ____________. 
+Stateful composable
+Stateful Recomposition
+Stateless composable
+
+Question 5) What is the main purpose of State Hoisting in Android UI Development? 
+To improve the performance of an Android application 
+To store and restore UI states during configuration changes 
+To aid in debugging an application
+
+************ANSWER********************
+
+Question 1) True
+Question 2) Refresh the UI whenever the data changes. 
+Question 3) State that can be changed over time. 
+Question 4) Stateful composable
+Question 5) To store and restore UI states during configuration changes 
+
+
+
+***************************|| Practice Quiz (Self-review: Building a responsive layout) ||****************************
+
+
+
+Question 1) In this exercise, what are the supported orientations?
+horizontal
+portrait
+landscape
+
+Question 2) In this exercise device orientation was retrieved using configuration.landscape property.
+True
+False
+
+Question 3) In this exercise, how many layouts where used? 
+one layout
+two layouts
+three layouts
+
+************ANSWER********************
+
+Question 1)portrait
+           landscape
+Question 2) False
+Question 3) two layouts
+
+
+
+***************************|| Graded Assignment (Building UI with Jetpack Compose) ||*****************************
+
+
+
+Question 1
+When chaining modifiers, which order are they applied in?
+alphabetical order
+right to left
+top to bottom
+left to right
+
+Question 2) Which of the following Material Components can be implemented using Jetpack Compose? Select all that apply.
+text-field
+list
+card
+button
+
+Question 3) Which of the following is the correct way to add a spacing of 10 dp around all four sides of a text composable?
+A) Text(
+      text = “Hello World!”,
+      modifier = Modifier.padding(10.dp)
+  )
+
+B) Text(
+      text = “Hello World!”,
+      modifier = padding(10.dp)
+  )
+
+C)Text(
+      text = “Hello World!”,
+      padding = Modifier.padding(10.dp)
+  )
+
+
+Question 4) What is a recommended approach to ensure that a UI survives configuration changes when using Jetpack Compose? 
+Use the remember{} function to save the UI state. 
+Use the rememberSavedInstanceState() function to save the UI state.
+Use the onSaveInstanceState() function to save the UI state. 
+Manually recreate the UI on configuration changes. 
+
+Question 5) Which of the following is the correct programming term for executing a function when an event occurs?
+listeners
+an event
+handling the event
+user action
+
+Question 6) Which of the following is a UI pattern that provides a side-panel for navigating between different parts of the application?
+Navigation Drawer Scaffold
+Backdrop Scaffold
+NavigationBar
+BottomSheetScaffold
+
+Question 7) What is Material Design? 
+Material Design is a language for programming mobile applications.
+Material Design is a design system for developing UIs for Android applications. 
+Material Design is a framework for creating web applications.
+Material Design is a system for developing websites.
+
+Question 8) Which of the following makes material components in Compose adaptable?
+slots
+scaffolds
+modifiers
+lambdas
+
+Question 9) Which of the following Jetpack Compose Material components can be implemented as built-in composables? Select four that apply.
+TextField
+Pattern
+Avatar
+Card
+Slider
+Button
+
+Question 10) Which of the following UI patterns would be best suited to carry the name of the app and some buttons relevant to the current screen?
+a navigation drawer
+floating action buttons
+a top app bar
+snackbar
+
+************ANSWER********************
+
+Question 1) left to right
+Question 2) text-field
+            card
+            button
+Question 3) A) Text(
+                  text = “Hello World!”,
+                  modifier = Modifier.padding(10.dp)
+               )
+Question 4) Use the remember{} function to save the UI state. 
+Question 5) handling the event
+Question 6) Navigation Drawer Scaffold
+Question 7) Material Design is a design system for developing UIs for Android applications. 
+Question 8) scaffolds
+Question 9) TextField
+            Card
+            Slider
+            Button
+Question 10) a top app bar
