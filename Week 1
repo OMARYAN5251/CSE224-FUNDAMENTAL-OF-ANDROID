@@ -1,8 +1,9 @@
+***********************|| Practice Quiz (Knowledge check: Activities and Views) ||*************************
+
 Question 1) The first screen that appears after an app is launched is known as a _____________?  
 Screen class
 Component Activity
 Main Activity
-
 
 Question 2) What are the advantages of using Jetpack Compose for UI development? Check all that apply.   
  It helps developers maintain a consistent UI across multiple devices and platforms such as Android, iOS and the web.   
@@ -10,13 +11,11 @@ Question 2) What are the advantages of using Jetpack Compose for UI development?
  It can help build a UI using less code    
  It builds a UI without needing to use an Activity.
 
-
 Question 3) What is the purpose of View Groups when building an Android UI? Select all that apply.    
  To replace the use of TextView     
  To define the navigation paths between screens     
  To allow for the creation of complex user interfaces  
  To provide a better organization of views.
-
 
 Question 4) Which of these are commonly used views in Android applications? Select all that apply.    
 TextView
@@ -26,7 +25,6 @@ TextField
 Button
 ImageView
 
-
 Question 5) Which of the following are layout views that can be used in Android UI design. Select all that apply.    
 ViewLayout
 RelativeLayout
@@ -35,8 +33,8 @@ GridLayout
 UILayout
 
 
+*****************Answer******************
 
-Answer 
 Question 1) Main Activity
 Question 2) It helps developers maintain a consistent UI across multiple devices and platforms such as Android, iOS and the web.   
             It simplifies the development of UI components for Android applications    
@@ -51,3 +49,206 @@ Question 4) TextView
 Question 5) RelativeLayout
             LinearLayout
             GridLayout
+
+
+
+****************|| Practice Quiz (Self-review: A basic UI with Compose) ||***************************
+
+
+
+Question 1) When defining the string resource in the exercise, what was the ID of the title string? 
+R.id.string.title
+R.string.title
+R.id.title
+
+Question 2) Adding the font size parameter to RestaurantName() composable limits it to emit Text of 32sp only.
+True 
+False
+
+Question 3) How many arguments were passed to the RestaurantNamePreview() function?
+One 
+None 
+Two
+
+
+**************Answer********************* 
+Question 1) R.string.title
+Question 2) False
+Question 3) None
+
+
+
+
+*******************|| Practice Quiz (Knowledge check: Introduction to Composable UI) || ***********************
+
+
+
+Question 1
+Declarative UI programming allows developers to define the UI and its behavior in a concise and expressive way by describing the desired result instead of the details of how to achieve it.    
+True
+False
+
+Question 2) In Jetpack Compose the ‘Compose’ item can best be described as:    
+A library for developing UI that is part of the Jetpack suite.
+A reusable view component
+Compose is a tool that builds a UI without needing to use an Activity
+
+Question 3) What are the three main benefits to using a declarative approach when building an Android UI? Select all that apply.
+Reduced need for unit tests 
+Improved performance 
+Less complex UI components 
+More succinct code
+Easier to read and debug code
+
+Question 4) In this code,a composable function is defined. What is the name of this function?
+ @Composable
+ fun MainPanel(name: String) {
+     Text(text = "$name")
+ }
+
+Text
+MainPanel
+Composable
+
+Question 5) In this code, a composable function is defined. In the second-last code line the “name” argument is passed to another function Text. What is the best description of this function?
+  @Composable
+  fun MainPanel(name: String) {
+     Text(text = "$name")
+  }
+
+A built-in composable function in the Compose library
+A variable          
+A function written by the developer.
+
+
+**********Answer***********
+Question 1) True
+Question 2) A library for developing UI that is part of the Jetpack suite.
+            A reusable view component
+Question 3) Easier to read and debug code
+            More succinct code
+            Improved performance
+Question 4) MainPanel
+Question 5) A built-in composable function in the Compose library
+
+
+
+************************|| Practice Quiz (Self-review: Defining a login screen with Compose) ||***************************
+
+
+
+Question 1) In this exercise, which arguments were used to position content on the screen?                    
+a) 1
+horizontalAlignment = Alignment.CenterHorizontally
+
+
+b) 1
+verticalArrangement = Arrangement.Center
+
+
+c) 1
+horizontalAlignment = Alignment.CenterHorizontally
+ and
+1
+verticalArrangement = Arrangement.Center
+
+Question 2) In this exercise, what was the name of the Composable used to add Little Lemon logo?                          
+a)Drawable
+b)Image
+c)Painter
+d)ImageView
+
+Question 3) In this exercise, what annotation is required to create Composable Preview
+a)Preview annotation only 
+b)Composable annotation only
+c)Composable and Preview annotations
+
+
+*************Answer************** 
+Question 1)c) 1
+              horizontalAlignment = Alignment.CenterHorizontally
+              and
+              1
+              verticalArrangement = Arrangement.Center
+Question 2)b)Image
+Question 3)c)Composable and Preview annotations
+
+
+
+**************************|| Graded Assignment (Basic UI creation in Android) ||***************************************
+
+
+
+Question 1
+Which of the following would you use to create a screen of nested composables in such a way that the elements stack up vertically?
+Grid layout
+Column layout
+Row layout
+Panel layout
+
+Question 2
+What is an Activity in Android UI Development? 
+A function that performs a calculation. 
+A component that allows users to interact with the app UI.
+A special type of ViewGroup container. 
+A resource file that stores application data. 
+
+Question 3) What is an XML file used for in an Android project?
+Defining a ViewGroup
+Storing structured information
+Styling a view
+
+Question 4) What is the Activity lifecycle?
+A function for determining the screen orientation
+States an activity instance goes through from start to termination
+A collection of callback methods
+A method of placing an activity’s content
+
+Question 5) Which of the following are examples of view groups? Select all that apply. 
+RelativeLayout
+LinearLayout
+FrameLayout
+GridViewLayout
+
+Question 6) What is a Composable in Android UI Development? 
+An animation used to transition between activities 
+A library of user interface components.
+A reusable component in Jetpack Compose. 
+
+Question 7) Which of these is a way to preview the appearance of an Android UI?
+Use the Android Studio Debugger.
+Use the Android Studio Layout Editor.
+Use the Android Studio Emulator.
+
+Question 8) Which of the following is an Invisible UI element that acts as a container to other views?
+View group
+A tree
+View
+Layout
+
+Question 9) Which of the following correspond to the attributes of XML elements?
+Layouts
+View groups
+View Subclasses
+Object properties
+
+Question 10) Which of the following lays out composables horizontally?
+Box
+View
+Column
+Row
+
+*******Answer**********
+
+Question 1) Column layout
+Question 2) A component that allows users to interact with the app UI.
+Question 3) Storing structured information
+Question 4) States an activity instance goes through from start to termination
+Question 5) RelativeLayout
+            LinearLayout
+            FrameLayout
+Question 6) A reusable component in Jetpack Compose
+Question 7) Use the Android Studio Layout Editor
+Question 8) View group
+Question 9) Object properties
+Question 10) Row
