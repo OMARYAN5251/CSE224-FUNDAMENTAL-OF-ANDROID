@@ -33,3 +33,21 @@ RelativeLayout
 LinearLayout
 GridLayout
 UILayout
+
+
+
+Answer 
+Question 1) Main Activity
+Question 2) It helps developers maintain a consistent UI across multiple devices and platforms such as Android, iOS and the web.   
+            It simplifies the development of UI components for Android applications    
+            It can help build a UI using less code
+Question 3) To define the navigation paths between screens     
+            To allow for the creation of complex user interfaces  
+            To provide a better organization of views
+Question 4) TextView
+            Button
+            ImageView
+            TextField
+Question 5) RelativeLayout
+            LinearLayout
+            GridLayout
