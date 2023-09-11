@@ -1,0 +1,252 @@
+***************** Practice Quiz (Readiness Check: Have you imported the project?)****************
+
+Question 1) Did you successfully download and import the starting project code?     
+ Yes
+ No
+ 
+Question 2) Did the app run successfully on your Android device/emulator?    
+ Yes
+ No
+
+
+*****************Answer******************
+
+Question 1) Yes
+Question 2) Yes
+
+
+
+
+***************** Practice Quiz (Readiness Check: Have you set up the MenuDish composable?)****************
+
+
+Question 1) Were you able to run the app successfully after setting up the MenuDish composable?
+ Yes
+ No
+    
+Question 2) Did all the food menu items display in the app?
+ Yes
+ No
+ 
+
+*****************Answer******************
+
+Question 1) Yes
+Question 2) Yes
+
+
+
+
+***************** Practice Quiz (Readiness Check: Have you set up the DishDetails composable?)****************
+
+Question 1) Were you able to run the app successfully after setting up the DishDetail composable?    
+ Yes
+ No    
+
+Question 2) When you press on the food menu item, does the app navigate to the detail view?    
+ Yes
+ No
+
+Question 3) When the food item detail view is displayed, which of the following are displayed in the app? Select all that apply.    
+ Dish Description
+ Dish Image
+ Dish Name
+ Dish Calories
+
+*****************Answer******************
+
+Question 1) Yes 
+Question 2) Yes
+Question 3) Dish Description
+            Dish Image
+            Dish Name
+
+
+
+
+
+***************** Practice Quiz (Readiness Check: Have you set up the Little Lemon theme?)****************
+
+Question 1) Were you able to run the app successfully after setting up the Little Lemon theme?    
+ Yes
+ No    
+
+Question 2) Does the app look similar to the image below?    
+ Yes
+ No
+
+
+*****************Answer******************
+
+Question 1) Yes 
+Question 2) Yes
+
+
+
+
+**************************|| Graded Assignment (Final Graded Quiz: Create the User Interface) ||***************************************
+
+
+Question 1) In an Android application, which of the following is created first? 
+  View
+  Fragment
+  Composable
+  Activity 
+
+
+Question 2) How is a Compose UI element represented?
+  Tag in the XML file
+  AppCompatActivity
+  View Object
+  Special function  
+
+
+Question 3) What can a layout contain? Select all that apply.
+  Activities
+  Screens
+  UI Elements
+  Other layouts
+
+Question 4) Which statements are true about modifiers? Select all that apply.
+  Modifiers allow you to impart specific interactivity or behavior to the elements.
+  When augmenting appearance, modifiers can act as decorators.
+  A modifier is responsible for modifying Activity behavior.
+
+
+Question 5) In the code below, what is the reason behind usage of the remember function and mutableStateOf observable?
+              val value = remember { mutableStateOf(/*some value*/) }
+
+Reset of the variable value during recomposition.
+Prevent reset of the variable value during recomposition.
+Reset of the variable value during function call.
+
+
+Question 6) Which of the following are part of Jetpack navigation?
+Select all that apply. 
+  NavController
+  NavCompose
+  NavGraph
+  NavHost
+
+Question 7) Which lazy composable is not included in Jetpack compose?
+  LazyColumn
+  LazyGrid
+  LazyRow
+  LazyButton
+
+
+Question 8) True or False: Modifying the Button style in the theme will change the appearance of every button in the application unless the theme style is overridden.
+  True 
+  False
+
+
+Question 9) True or False: The main difference between dp (density independent pixel) and sp (scalable pixel) is that sp takes the text size setting of the user device into consideration when deciding what text size should be displayed. 
+  True 
+  False
+
+
+Question 10) What will the output of this code be?
+ var visible by remember { mutableStateOf(true) 
+ 1 } Column { 
+ 2    if (visible) { 
+ 3    Text(text = "Hello") 
+ 4 } Button(onClick = { visible = !visible }) { 
+ 5    Text("My Button") 
+ 6    } 
+ 7 }
+   The first Button click will instantly show the Text and the next Button click will have no effect.
+   The first Button click will instantly hide the Text and the following Button click will instantly show the Text.
+   The first Button click will start the fade in animation of the Text and the following Button click will start the fade out animation of the Text.
+   The first Button click will start the fade out animation of the Text and following Button click will start fade in animation of the Text
+
+Question 11) Which of the following is represented by an Activity?
+  a UI pattern
+  the main program entry point
+  the application screen
+  a component
+
+Question 12) Which of the following is the parent class for all types of views?
+  ImageView
+  View
+  ViewGroup
+  TextView
+
+Question 13) Which of the following is is the state an Activity enters as soon as it becomes visible on the screen?
+  created
+  started
+  resumed
+  paused
+
+Question 14) Which of the following are examples of view groups? Select all that apply.
+  ImageViewLayout
+  RelativeLayout
+  LinearLayout
+  FrameLayout
+
+Question 15) Which of the following is a disadvantage of using XML to create a User Interface in Android Studio?
+  XML can only run on devices of specific screen sizes and resolutions.
+  XML cannot be transferred over networks.
+  XML can be difficult to debug.
+  XML is an inflexible language.
+
+Question 16) When writing composable functions, which of the following do you add before the start of the function definition?
+  @Composable
+  composable
+  @function
+  @annotation
+
+Question 17) Which of the following is a Kotlin language feature that allows developers to add metadata used to provide additional information and control the behavior of the code?
+  annotations
+  functions
+  composables
+  variables 
+
+Question 18) Which of the following built-in layouts in Compose places composables horizontally?
+  column
+  box
+  row
+  layout 
+
+Question 19) Which of the following annotations allows you to preview designs built with Jetpack Compose?
+  @Preview
+  Preview
+  @Composable
+
+
+Question 20) Which of the following modifiers is used to set the background color of a composable?
+  backgroundColor
+  background
+  color
+  layoutColor 
+
+
+
+
+*****************Answer******************
+
+Question 1) Activity 
+Question 2) AppCompatActivity
+Question 3) UI Elements
+            Other layouts
+Question 4) Modifiers allow you to impart specific interactivity or behavior to the elements.
+            When augmenting appearance, modifiers can act as decorators.
+Question 5) Prevent reset of the variable value during recomposition.
+Question 6) NavController
+            NavGraph
+            NavHost
+Question 7) LazyButton
+Question 8) True
+Question 9) True
+Question10) The first Button click will instantly hide the Text and the following Button click will instantly show the Text.
+Question 11) the application screen
+Question 12) View
+Question 13) created
+Question 14) RelativeLayout
+             LinearLayout
+             FrameLayout
+Question 15) XML can be difficult to debug
+Question 16) @Composable
+Question 17) annotations
+Question 18) row
+Question 19) @Preview
+Question 20) background
