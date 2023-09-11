@@ -1,0 +1,301 @@
+***************** Practice Quiz (Self-review: Create a navigation in Compose)****************
+
+Question 1) In this exercise, which property of the NavHost is used to set the initial destination?    
+modifier
+startDestination
+navController
+ 
+Question 2) In this exercise, the composable function is used to add the routes for the for the NavHost.    
+True
+False
+
+Question 3) In this exercise, which one of the following variables are created in the Destinations interface for defining the NavGraph.    
+route
+nodes
+icon
+
+*****************Answer******************
+
+Question 1) startDestination
+Question 2) True
+Question 3) route
+
+
+
+
+
+
+***************** Practice Quiz (Knowledge check: JetPack Navigation)****************
+
+
+Question 1) Which among the following actions can start navigation? Select all that apply.
+Clicking a tab item
+Selecting an item from the list
+Clicking a button
+    
+Question 2) Bottom Navigation only navigates to a new destination without showing the status of the active item.
+True
+False
+
+Question 3) Select all that apply. The fixed start navigation principle states that:     
+The application always starts from the same screen but ends with a different screen.   
+The application always ends with the same starting screen while leaving the app.
+The application always starts from the same first screen. 
+
+Question 4
+The Stack works on which one of the following principles?
+Last in Last out
+Last in First out
+First in First out
+First in Last out
+
+Question 5) Select all that apply. 
+
+The purpose of NavHost is to:               
+manage the Back Stack.
+take the NavController as a parameter and associate it with the NavGraph.
+act as a container for displaying the current destination.
+
+
+
+
+*****************Answer******************
+
+Question 1) Clicking a tab item
+            Selecting an item from the list
+            Clicking a button
+Question 2) False
+Question 3) The application always ends with the same starting screen while leaving the app.
+            The application always starts from the same first screen. 
+Question 4) Last in First out
+Question 5) take the NavController as a parameter and associate it with the NavGraph.
+            act as a container for displaying the current destination.
+
+
+
+
+
+***************** Practice Quiz (Self-review: Create a scrollable gallery)****************
+
+
+Question 1) In this exercise, which function did you call to make the Column Scrollable?    
+ Modifier.verticallScroll()    
+ Modifier.horizontalScroll()    
+ Modifier.imeNestedScroll()    
+
+Question 2) In this exercise, which property is used for arranging Row items?    
+ horizontalArrangement
+ verticalArrangement
+
+Question 3) In this exercise, which one of the following approaches was used to populate the Grid?    
+ forEach method
+ repeat method
+ forEachIndexed method
+
+
+
+*****************Answer******************
+
+Question 1) Modifier.verticallScroll() 
+Question 2) horizontalArrangement
+Question 3) repeat method
+
+
+
+
+***************** Practice Quiz (Knowledge check: Lists and Grids)****************
+
+Question 1) Which among the following can be used to place its children horizontally?
+Row
+Column
+
+Question 2) Which one of the following arrangements adds space to the first and last child on the list while keeping other items in the center?    
+Space Evenly
+Space between
+Space around
+
+Question 3) Which of the following arrangements can be used with a Column?    
+Both Vertical and Horizontal Arrangements
+Horizontal Arrangement
+Vertical Arrangement
+
+Question 4) Scrolling is available to a Row and a Column without adding any modifier.    
+True
+False
+
+Question 5) For creating a Grid of a small number of elements, a combination of Row and Column composable can be used.    
+True
+False
+
+
+*****************Answer******************
+
+Question 1) Row
+Question 2) Space around
+Question 3) Vertical Arrangement
+Question 4) False
+Question 5) True
+
+
+
+
+
+***************** Practice Quiz (Self-review: Create and style a lazy grid)****************
+
+
+Question 1) In this exercise, which of the following parameter was passed to GridCells.Adaptive()? 
+ 2 as the count of columns    
+ 140.sp as the minimum size    
+ 140.dp as the minimum size    
+
+Question 2) In this exercise, GridCells.Fixed() defines a grid with as many rows or columns as possible.    
+ True
+ False
+
+Question 3) In this exercise, which one of the following approaches is used to populate the LazyVerticalGrid? Select all that apply.     
+ forEach
+ items method    
+ forEachIndexed method
+
+
+*****************Answer******************
+
+Question 1) 140.dp as the minimum size
+Question 2) False
+Question 3) items method    
+            forEachIndexed method
+
+
+
+
+
+
+
+**************************|| Graded Assignment (Advanced UI with JetPack Compose) ||***************************************
+
+Question 1) What is the back stack used for in Android?
+ generating routes
+ database queries
+ forward navigation
+ backward navigation
+
+
+Question 2) The type of the route variable which corresponds to the destination in the navigation graph is ________ .
+  Boolean
+  Int
+  String
+
+
+Question 3) Which of the following can be considered the equivalent of a route?
+  An interface for a destination
+  Defining an id for a destination
+  An object
+  A destination
+
+
+
+Question 4) Which of the following statements is true about defining a constant argument in a Destination?
+  It helps organize the arguments.
+  It is required.
+  It reduces the amount of required code.
+
+
+
+Question 5) Given the below function ProfileScreen, which of the following is the correct definition of its corresponding destination?
+(a)1 @Composable
+   2fun ProfileScreen(userName: String?) {
+   3  Column(
+   4       Modifier.fillMaxSize(),
+   5       verticalArrangement = Arrangement.Center,
+   6       horizontalAlignment = Alignment.CenterHorizontally
+   7   ) {
+   8       Text(
+   9           text = "Welcome, $userName",
+   10           fontSize = 33.sp
+
+
+ (b)1 interface Destinations {
+    2    val route: String
+    3 }
+    4 object Profile : Destinations {
+    5    const val argUserName = "UserName"
+    6    override val route = "Profile"
+    7 }
+
+
+ (c)1 interface Destinations {
+    2  val route: String
+    3 }
+    4 object Profile{
+    5  const val argUserName = "UserName"
+    6  override val route = "Profile"
+    7 }
+
+
+  (d)1 interface Destinations {
+     2  val route: String
+     3 }
+     4 object Profile : Destinations {
+     5 argUserName = "UserName"
+     6 override val route = "Profile"
+     7 }
+
+
+
+Question 6) What is each bottom navigation element called?
+ bottomNavigationItem
+ navigationItem
+ bottomNavItem
+
+
+Question 7) What among the following elements is scrollable without adding the modifier? Select all that apply. 
+ LazyColumn
+ Row
+ LazyRow
+ Column
+
+
+Question 8) Which of the following is used to add spacing around the content displayed in lazy lists and grids?
+ padding
+ Vertical Arrangement
+ contentPadding
+
+Question 9) Which among the following are the parameters of the composable function defined in the NavHost? Select all that apply. 
+ startDestination 
+ route
+ arguments
+ navController
+
+
+Question 10) Which of the following best describes what a NavHost is?
+ NavHost acts as a container for displaying the current destination.
+ NavHost is a collection of navigable destinations.
+ NavHost is responsible for keeping track of the back stack.
+
+
+
+
+*****************Answer******************
+
+Question 1) backward navigation
+Question 2) String
+Question 3) Defining an id for a destination
+Question 4) It helps organize the arguments
+Question 5) (d)1 interface Destinations {
+               2  val route: String
+               3 }
+               4 object Profile : Destinations {
+               5 argUserName = "UserName"
+               6 override val route = "Profile"
+               7 }
+Question 6) bottomNavigationItem
+Question 7) LazyColumn
+            LazyRow
+Question 8) contentPadding
+Question 9) startDestination 
+            route
+            arguments
+            navController
+Question10) NavHost acts as a container for displaying the current destination.
+
+
