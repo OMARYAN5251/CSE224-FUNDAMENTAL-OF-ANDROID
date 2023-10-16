@@ -1,0 +1,268 @@
+************************************** Self review: Extensions ************************************************************
+
+
+Question 1) What was the output when you ran your solution?
+           [Onion, Cheese, Water]
+
+           [Onion, Cheese, Water, Salt]
+
+           Onion,
+           Cheese,
+           Water
+
+
+Question 2) Replace the Salt string in the removeSalt extension function with Cheese. Run the code. What is the output?
+            [Onion, Water]
+            [Onion, Cheese, Water]
+            [Onion, Water, Salt]
+
+
+Question 3) Little Lemon asks you to write a new extension function to remove an ingredient (provided as a string) from a dish. Which of these extension functions will perform the requested task?
+            fun Dish.removeIngredient(ingredient: String) { ingredients.remove(ingredient) } 
+            fun String.removeIngredient(ingredient: String) { remove(ingredient) } 
+            fun String.removeIngredient(dish: Dish) { dish.ingredients.remove(this) }
+
+
+//////////ANSWER///////////////
+
+
+Question 1) [Onion, Cheese, Water]
+Question 2) [Onion, Water, Salt]
+Question 3) fun Dish.removeIngredient(ingredient: String) { ingredients.remove(ingredient) } 
+            fun String.removeIngredient(dish: Dish) { dish.ingredients.remove(this) }
+
+
+
+*********************************************** Knowledge check: Extensions *************************************************
+
+
+
+Question 1) Which of the below can be inherited? Select all that apply.
+            An interface
+            A final class
+            An open class
+            An object
+
+
+Question 2) Extension functions can be quite useful. Which of these are benefits of extension functions? Select all that apply.
+           They allow extending final and 3rd party classes.
+           They can access private properties and functions of the extended class.
+           They can be called just like normal functions of the extended class.
+           They can override existing functions of a class.
+
+
+Question 3) You are asked to implement an extension function for the final Dish class that would print out its ingredients field. How would the extension function look?
+            fun List<Ingredient>.printIngredients(dish: Dish) { println(this) }
+            fun Dish.printIngredients(ingredients: List<Ingredient>) { println(ingredients) }
+            fun Dish.printIngredients() { println(ingredients) }
+            fun printIngredients(dish: Dish) { println(dish.ingredients) }
+
+
+//////////ANSWER///////////////
+
+
+Question 1) An interface
+            An open class
+Question 2) They allow extending final and 3rd party classes
+            They can be called just like normal functions of the extended class.
+Question 3) fun Dish.printIngredients() { println(ingredients) }
+
+
+
+*********************************************** Self review: Write a unit test *************************************************
+
+
+Question 1) How do you convert the regular function into the test function?
+            Append test_ prefix to the function name.    
+            Mark the class where it is located with Test annotation.
+            Mark the function with Test annotation.
+
+
+Question 2) What is the correct order of AAA pattern?
+            Act – Arrange – Assert
+            Assert – Act – Arrange
+            Arrange – Act – Assert
+
+Question 3) Which of three tests for Product class will fail, if you change the minimum amount for discount from 5 to 10? (Hint: update the applyDiscount function and see)  
+            The first and the second tests will fail.
+            Only the second test will fail.
+            All tests will fail.
+
+
+//////////ANSWER///////////////
+
+
+Question 1) Mark the function with Test annotation.
+Question 2) Arrange – Act – Assert
+Question 3) Only the second test will fail.
+
+
+
+*********************************************** Self review: Defining generic classes and functions *************************************************
+
+Question 1). When you run your solution for the exercise Defining generic classes and functions, what is the output?
+
+             2
+             [Cheese, Cheese]
+             1
+
+Question 2). If you replaced the type passed to newInventory from Cheese to Onion, when you run your solution, which of the following would be a valid statement?
+            
+            cheeseInventory.addIngredient(Onion)
+            cheeseInventory.addIngredient(Cheese)
+            cheeseInventory.addIngredient("Onion")
+
+Question 3). For the code implemented in Step 2 of the exercise, which of the below statements are valid? 
+
+            Inventory<Egg>()
+            Inventory<Flour>()
+            Inventory<"Milk">()
+
+
+//////////ANSWER///////////////
+
+
+Question 1) 2
+
+Question 2) cheeseInventory.addIngredient(Onion)
+
+Question 3) Inventory<Egg>()
+            Inventory<Flour>()
+
+
+
+*********************************************** Knowledge check: Collections and generics *************************************************
+
+Question 1).What operations can you perform on a MutableCollection but not on a Collection? 
+
+            Get a count of the elements in the collection.
+            Add an element.
+            Remove an element.
+            Read an element.
+
+Question 2).Which of the following statements declares a generic class in Kotlin?
+
+            generic class GenericClass
+            abstract class GenericClass
+            class GenericClass
+            class GenericClass<TYPE>
+
+Question 3).You need to instantiate a field named employeeNames of type List<String>. Which of the following statements is valid in Kotlin?
+
+            val employeeNames: List<String> = listOf("James", "Ella")
+            val employeeNames: List<String> = ["James", "Ella"]
+            val employeeNames: List<String> = "James, Ella"
+            val employeeNames: List<String> = ("James", "Ella")
+
+
+//////////ANSWER///////////////
+
+
+Question 1) Add an element.
+            Remove an element.
+
+Question 2) class GenericClass<TYPE>
+
+Question 3) val employeeNames: List<String> = listOf("James", "Ella")
+
+
+
+*********************************************** Module quiz: Advanced Object-Oriented Features *************************************************
+
+
+Question 1).For a class Rectangle, which of these represents the correct syntax for defining an extension function getWidth?
+
+            1 fun Rectangle getWidth(): Int
+            1 fun Rectangle.getWidth(): Int 
+            1 fun getWidth<Rectangle>(): Int
+
+Question 2).For the extension function fun Rectangle.getWidth(): Int, what is the correct way to call the function in the code?
+
+            1 Rectangle.getWidth()
+            1 Rectangle().getWidth()
+            1 getWidth(Rectangle())
+
+Question 3).Which type of testing is performed to test individual components of an application’s code logic?
+
+            Integration testing
+            Unit testing
+            End-to-end testing
+
+Question 4).While using JUnit, which annotation is used to mark a function as a unit test?
+
+            @UnitTest
+            @Test
+            @JUnitTest
+
+Question 5).When should you use mocks in your tests?
+
+            When you need to define a complete alternate definition of an object to be used for testing.
+            When there are objects that are not to be tested but are needed because the code under test depends on them.
+            When you need to test only some specific behavior of an object
+
+Question 6).Which of these is a definition of the List collection type?
+
+            An unordered group of elements that cannot contain duplicate elements.
+            An ordered group of elements that can contain duplicate elements.
+            An unordered group of elements that can contain duplicate elements.
+
+Question 7).What is the output of the code below:
+1 val numberSet = setOf(1, 8, 5, 7, 5, 2)println(numberSet) 
+2 val numberSet = setOf(1, 8, 5, 7, 5, 2)
+3 println(numberSet)
+
+          [1, 8, 5, 7, 5, 2]
+          [1, 8, 5, 7, 2]
+          [1, 8, 7, 2]
+
+
+Question 8).What is the output of the following code:
+1 val map = mapOf(
+2  1 to 90, 
+3  2 to 93,
+4  3 to 91,
+5  4 to 93,
+6  2 to 95,
+7  5 to 93
+8 )
+9 println(map)
+
+          {1=90, 2=93, 3=91, 4=93, 5=93}
+          {1=90, 2=95, 3=91, 4=93, 5=93}
+          {1=90, 2=93, 3=91, 4=93, 2=95, 5=93}
+
+Question 9).Which of these represents the correct syntax for defining a generic class?
+
+            1 class <T> Item(t: T) { }
+            1 class Item<T>(t: T) { }
+            1 class <T>.Item(t: T) { }
+
+
+Question 10).Which of these represents the correct syntax for defining a generic function?
+
+             1 fun sampleFunction<T> (item: T) { }
+             1 fun <T> sampleFunction(item: T) { }
+             1 fun <T>.sampleFunction(item: T) { }
+
+//////////ANSWER///////////////
+
+
+Question 1) 1 fun Rectangle.getWidth(): Int
+
+Question 2) 1 Rectangle().getWidth()
+
+Question 3) Unit testing
+
+Question 4) @Test
+
+Question 5) When there are objects that are not to be tested but are needed because the code under test depends on them
+
+Question 6) An ordered group of elements that can contain duplicate elements.
+
+Question 7) [1, 8, 5, 7, 2]
+
+Question 8) {1=90, 2=95, 3=91, 4=93, 5=93}
+
+Question 9) 1 class Item<T>(t: T) { }
+
+Question 10) 1 fun <T> sampleFunction(item: T) { }
